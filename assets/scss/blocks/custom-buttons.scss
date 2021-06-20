@@ -1,0 +1,53 @@
+.btn:active,
+.btn:focus {
+  outline   : none !important;
+  box-shadow: none;
+}
+
+.btn-purple {
+  color           : #fff;
+  background-color: $purple-600;
+  border-color    : $purple-600;
+
+  &:hover {
+    color           : #fff;
+    background-color: $purple-700;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 0.2rem rgba($purple-600, 0.5);
+  }
+}
+
+.btn-orange {
+  color           : #fff;
+  background-color: $orange-500;
+  border-color    : $orange-500;
+
+  &:hover {
+    color           : #fff;
+    background-color: $orange-600;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 0.2rem rgba($orange-500 , 0.5);
+  }
+}
+
+._active-btn-case {
+  color           : $purple-600;
+  background-color: white;
+  border-color    : $purple-600;
+}
+
+._active-btn-glass {
+  color           : $blue-400;
+  background-color: white;
+  border-color    : $blue-400;
+}
+
+._active-btn-charge {
+  color           : $orange-300;
+  background-color: white;
+  border-color    : $orange-300;
+}

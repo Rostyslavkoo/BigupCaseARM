@@ -1,0 +1,13 @@
+@import "_vars";
+@import "vendor/bootstrap";
+
+body {
+  font-family: $system_fonts;
+}
+// all block
+@import "blocks/pages";
+@import "blocks/search-input";
+@import "blocks/nav-menu";
+@import "blocks/custom-buttons";
+@import "blocks/custom-table";
+@import "blocks/custom-input";

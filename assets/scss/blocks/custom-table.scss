@@ -1,0 +1,35 @@
+.table-scrollable {
+  max-height     : 75vh;
+  overflow-x     : auto;
+  overflow-y     : auto;
+  scrollbar-width: thin;
+}
+
+.table-scrollable thead th {
+  border: none;
+}
+
+.table-scrollable thead th {
+  position        : sticky;
+  top             : 0;
+  background-color: white;
+  margin-top      : -1px;
+  margin-bottom   : -1px;
+  box-shadow      : inset 0 1px 0 #dee2e6, inset 0 -1px 0 #dee2e6;
+}
+
+.b-img-table i {
+  cursor    : pointer;
+  font-size : 1.1rem;
+  transition: 0.4s ease-out;
+}
+
+.b-img-table i:hover {
+  color     : #39803D;
+  transition: 0.2s ease-out;
+}
+
+p {
+  margin : 0;
+  padding: 0;
+}

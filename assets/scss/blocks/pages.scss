@@ -1,0 +1,18 @@
+.pages {
+  height: calc(100vh - 10px);
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.pages i {
+  font-size : 3rem;
+  cursor    : pointer;
+  transition: 0.2s ease-out;
+
+  &:hover {
+    color     : green;
+    transition: 0.4s ease-out;
+  }
+}
