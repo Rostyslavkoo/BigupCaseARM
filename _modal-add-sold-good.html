@@ -1,0 +1,57 @@
+<!-- Add-new-good-modal -->
+<div class="modal fade" id="modal_add_avaible" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content  c-modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Додати товар на склад</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- add-new-goods-btn -->
+        <div class="row modal_input justify-content-between align-items-center">
+
+          <div class="col col-lg-3 ">
+            <div class=" modal-input-block">
+              <p class="text-start text-dark">Введіть код товару</p>
+              <input type="text" required class="form-control mb-2">
+            </div>
+          </div>
+
+
+
+        </div>
+        @@include('_modal-add-avaible-goods-content.html')
+        <div class="row modal_input ">
+          <div class="col modal-input-block">
+            <p class="text-start text-dark">Дата продажу</p>
+            <input type="datetime-local" class="form-control" name="" value="">
+          </div>
+          <div class="col modal-input-block c-number" >
+            <p class="text-start text-dark">Кількість</p>
+            <div class="number-input d-flex justify-content-center ">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="bi bi-dash"></i></button>
+              <input class="quantity" min="1" max="999" name="quantity" value="1" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="bi bi-plus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col modal-input-block">
+              <label class="sr-only" for="inlineFormInputGroup">Ціна товару(шт)</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">₴</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" required placeholder="xxx">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer ">
+
+
+        <button type="button" class="btn btn-success">Додати до складу</button>
+
+
+      </div>
+    </div>
+  </div>
+</div>

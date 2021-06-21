@@ -27,10 +27,15 @@
       <input type="text" required class="form-control mb-2">
     </div>
   </div>
-  <div class="modal-input-block mt-0">
-    <p class="text-center text-dark ">Ціна</p>
-    <input type="text" required class="form-control mb-2 w-50  d-flex justify-content-center m-auto">
+  <div class=" modal-input-block mt-0">
+      <label class="sr-only" for="inlineFormInputGroup">Ціна товару(шт)</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">₴</div>
+            </div>
+            <input type="text" class="form-control" id="inlineFormInputGroup" required placeholder="xxx">
   </div>
+</div>
   <label for="new_good_img"><i class="bi bi-file-earmark-plus d-flex justify-content-center add mb-3"></i></label>
   <input type="file" id="new_good_img" name="avatar" required accept="image/png, image/jpeg" style="display:none">
   <div class="modal-footer">

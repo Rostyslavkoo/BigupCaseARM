@@ -1,5 +1,6 @@
 .table-scrollable {
   max-height     : 72vh;
+  min-height     : 72vh;
   overflow-x     : auto;
   overflow-y     : auto;
   scrollbar-width: thin;
