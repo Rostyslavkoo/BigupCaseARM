@@ -33,3 +33,47 @@ p {
   margin : 0;
   padding: 0;
 }
+
+.c-table-add-avaible {
+  padding: 0.5rem;
+}
+
+.c-table-add-avaible .table {
+  padding      : 1rem;
+  box-shadow   : 1px 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+  tbody {
+    padding    : 5rem !important;
+    align-items: center;
+  }
+
+  td,
+  th,
+  tr {
+    border      : none;
+    box-shadow  : none;
+    border-style: none!important;
+  }
+
+  tr {
+    height : 5rem;
+    padding: 0 1rem;
+  }
+
+  .c-img-table {
+    min-width  : 3rem;
+    min-height : 2rem;
+    max-height : 2rem;
+    max-width  : 3rem;
+    padding    : 0;
+    border-left: 1px solid rgba(gray, 0.1);
+    display    : flex;
+    align-items: center;
+  }
+
+  img {
+    width  : 100%;
+    display: block;
+  }
+}

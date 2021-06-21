@@ -1,5 +1,6 @@
 @import "_vars";
 @import "vendor/bootstrap";
+@import "_mixins";
 
 body {
   font-family: $system_fonts;
@@ -11,3 +12,4 @@ body {
 @import "blocks/custom-buttons";
 @import "blocks/custom-table";
 @import "blocks/custom-input";
+@import "blocks/add-modal";

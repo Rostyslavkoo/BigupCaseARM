@@ -6,48 +6,114 @@
 
 .btn-purple {
   color           : #fff;
-  background-color: $purple-600;
-  border-color    : $purple-600;
+  background-color: $purple-500;
+  border-color    : $purple-500;
 
   &:hover {
     color           : #fff;
-    background-color: $purple-700;
+    background-color: $purple-600;
   }
 
   &:active {
-    box-shadow: 0 0 0 0.2rem rgba($purple-600, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba($purple-500 , 0.5);
   }
 }
 
-.btn-orange {
+.btn-gray-700 {
   color           : #fff;
-  background-color: $orange-500;
-  border-color    : $orange-500;
+  background-color: $gray-700;
+  border-color    : $gray-700;
 
   &:hover {
     color           : #fff;
-    background-color: $orange-600;
+    background-color: $gray-800;
   }
 
   &:active {
-    box-shadow: 0 0 0 0.2rem rgba($orange-500 , 0.5);
+    box-shadow: 0 0 0 0.2rem rgba($gray-700 , 0.5);
+  }
+}
+
+.btn-indigo-600 {
+  color           : white;
+  background-color: $indigo-600;
+  border-color    : $indigo-600;
+
+  &:hover {
+    color           : #fff;
+    background-color: $indigo-700;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 0.2rem rgba($indigo-600 , 0.5);
+  }
+}
+
+.btn-cyan-500 {
+  color           : #fff;
+  background-color: $cyan-500;
+  border-color    : $cyan-500;
+
+  &:hover {
+    color           : #fff;
+    background-color: $cyan-600;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 0.2rem rgba($cyan-500 , 0.5);
+  }
+}
+
+.btn-outline-red-400 {
+  color           : $red-300;
+  background-color: #white;
+  border-color    : $red-300;
+
+  &:hover {
+    color           : #fff;
+    background-color: $red-300;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 0.2rem rgba($red-300 , 0.5);
   }
 }
 
 ._active-btn-case {
-  color           : $purple-600;
+  color           : $purple-500;
   background-color: white;
-  border-color    : $purple-600;
+  border-color    : $purple-500;
 }
 
 ._active-btn-glass {
-  color           : $blue-400;
+  color           : $cyan-500;
   background-color: white;
-  border-color    : $blue-400;
+  border-color    : $cyan-500;
 }
 
 ._active-btn-charge {
   color           : $orange-300;
   background-color: white;
   border-color    : $orange-300;
+}
+
+._active-btn {
+  color           : $gray-700;
+  background-color: white;
+  border-color    : $gray-600;
+
+  &:hover {
+    color           : $gray-600;
+    background-color: $gray-100;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 0.2rem rgba($gray-500 , 0.5);
+  }
+}
+
+.btn-success {
+  padding   : 0.575rem 0.75rem;
+  box-shadow: 0 0 0.2rem rgba($success , 0.5);
+  border    : none;
 }

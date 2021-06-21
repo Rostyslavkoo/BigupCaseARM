@@ -1,0 +1,41 @@
+<div class="row modal_input add_cases">
+  <div class="col ">
+    <div class="modal-input-block">
+      <p class="text-start text-dark">Код товару</p>
+      <input type="text" required class="form-control mb-2">
+    </div>
+    <div class="modal-input-block">
+      <p class="text-start text-dark">Тип чохла</p>
+      <input type="text" required class="form-control mb-2">
+    </div>
+    <div class="modal-input-block">
+      <p class="text-start text-dark">Бренд чохла</p>
+      <input type="text" required class="form-control mb-2">
+    </div>
+  </div>
+  <div class="col">
+    <div class="modal-input-block">
+      <p class="text-start text-dark">Марка телефона</p>
+      <input type="text" required class="form-control mb-2">
+    </div>
+    <div class="modal-input-block">
+      <p class="text-start text-dark">Модель</p>
+      <input type="text" required class="form-control mb-2">
+    </div>
+    <div class="modal-input-block">
+      <p class="text-start text-dark">Ціна</p>
+      <input type="text" required class="form-control mb-2">
+    </div>
+  </div>
+  <label for="new_good_img"><i class="bi bi-file-earmark-plus d-flex justify-content-center add mb-3""></i></label>
+  <input type=" file" id="new_good_img" name="avatar" required accept="image/png, image/jpeg" style="display:none">
+      <div class="modal-footer">
+        <div class="number-input">
+          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="bi bi-dash"></i></button>
+          <input class="quantity" min="1" max="999" name="quantity" value="1" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="bi bi-plus"></i>
+          </button>
+        </div>
+        <button type="button" class="btn btn-success">Додати до складу</button>
+      </div>
+</div>

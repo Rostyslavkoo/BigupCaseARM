@@ -1,0 +1,26 @@
+.c-modal-content.modal-content {
+  box-shadow   : 0 0 5px $gray-500;
+  border       : none!important;
+  border-radius: 2.5rem;
+  padding      : 2rem;
+}
+
+.c-modal-content.modal-header {
+  border: none;
+}
+
+.add-new-goods-btn i {
+  @include breakpoint($c-first_breakpoint) {
+    display: none;
+  }
+}
+
+.add-new-goods-btn .back i {
+  @include breakpoint($c-first_breakpoint) {
+    display: block!important;
+  }
+}
+
+.modal-img-table {
+  z-index: 1000;
+}
