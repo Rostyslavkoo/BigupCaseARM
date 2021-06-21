@@ -1,8 +1,9 @@
 .table-scrollable {
-  max-height     : 75vh;
+  max-height     : 72vh;
   overflow-x     : auto;
   overflow-y     : auto;
   scrollbar-width: thin;
+  box-shadow     : 0 0 0.5rem rgba(#A7B1C9 , 0.2);
 }
 
 .table-scrollable thead th {

@@ -10,6 +10,18 @@
   }
 }
 
+.search input {
+  border    : none;
+  box-shadow: 0 0 0.2rem rgba(#A7B1C9 , 0.5);
+
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0.2rem rgba(#A7B1C9 , 1);
+    outline   : none;
+    border    : none;
+  }
+}
+
 .modal-input-block {
   margin: 2rem 0;
 }
@@ -128,4 +140,14 @@ input[type="datetime-local"] {
 
 .c-footer {
   display: block;
+}
+
+.table {
+  border: none;
+
+  td,
+  th,
+  tr {
+    border-style: none;
+  }
 }
