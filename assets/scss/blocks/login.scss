@@ -1,0 +1,26 @@
+.wront-pass{
+	color: $red-400;
+	margin: 0;
+	padding:0;
+	text-decoration: none;
+	outline: none;
+	&:hover{
+			color: $red-400;
+
+	}
+}
+.login-input{
+ .form__input{
+ 	background-color: #fff;
+ 	 box-shadow: 0 0 0.2rem rgba(red, 1);
+ 	 &:focus{
+ 	 	 box-shadow: 0 0 0.2rem rgba(red, 1);
+ 	 }
+ }
+
+    .form__input:not(:placeholder-shown) {
+    background-color: white;
+    box-shadow: 0 0 0.2rem rgba(red, 1);
+}
+}
+

@@ -1,41 +1,52 @@
-<div class="row modal_input add_cases">
-    <div class="col">
-        <div class="form">
-            <input type="text" class="form__input form-control" required autocomplete="off" placeholder=" ">
-            <label for="email" class="form__label">Код товару</label>
+<form action="">
+    <div class="row add_cases">
+        <div class="col">
+            <div class="form">
+                <input id="idNewCase" name="idNewCase" type="text" class="form__input form-control" required placeholder=" ">
+                <label for="idNewCase" class="form__label">Код товару</label>
+            </div>
+            <div class="form">
+                <input type="text" id="typeCase" name="typeCase" class="form__input form-control" required autocomplete="off" placeholder=" ">
+                <label for="typeCase" class="form__label">Тип чохла</label>
+            </div>
+            <div class="form">
+                <input type="text" id="brandCase" name="brandCase" class="form__input form-control" required autocomplete="off" placeholder=" ">
+                <label for="brandCase" class="form__label">Бренд чохла</label>
+            </div>
         </div>
-        <div class="form">
-            <input type="text" class="form__input form-control" required autocomplete="off" placeholder=" ">
-            <label for="email" class="form__label">Тип чохла</label>
+        <div class="col">
+            <div class="form">
+                <input type="text" id="brandPhone" name="brandPhone" class="form__input form-control" required autocomplete="off" placeholder=" ">
+                <label for="brandPhone" class="form__label">Марка телефона</label>
+            </div>
+            <div class="form">
+                <input type="text" id="modelCase" name="modelCase" class="form__input form-control" required autocomplete="off" placeholder=" ">
+                <label for="modelCase" class="form__label">Модель</label>
+            </div>
+            <div class="form">
+                <input type="text" id="firstPriceCase" name="firstPriceCase" class="form__input form-control " required autocomplete="off" placeholder=" ">
+                <label for="firstPriceCase" class="form__label">Ціна товару(шт)</label>
+            </div>
         </div>
-        <div class="form">
-            <input type="text" class="form__input form-control" required autocomplete="off" placeholder=" ">
-            <label for="email" class="form__label">Бренд чохла</label>
+        <div class="row">
+            <div class="drag-and-drop-add-case">
+                <div class="drag-and-drop-content py-3" tabindex="0">
+                    <label for="new_case_img"><i class="bi bi-file-earmark-plus d-flex justify-content-center  "></i></label>
+                    <input type="file" id="new_case_img" name="new_case_img" required accept="image/png, image/jpeg" style="display:none">
+                </div>
+                <div class="drag-and-drop-img">
+                    <!-- <img src="assets/img/test-case.jpeg" alt=""> -->
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="number-input">
+                <button type="reset" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="bi bi-dash"></i></button>
+                <input class="quantity" min="1" max="999" name="quantity" value="1" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="bi bi-plus"></i>
+                </button>
+            </div>
+            <button type="submit" class="btn btn-success">Додати до складу</button>
         </div>
     </div>
-    <div class="col">
-        <div class="form">
-            <input type="text" class="form__input form-control" required autocomplete="off" placeholder=" ">
-            <label for="email" class="form__label">Марка телефона</label>
-        </div>
-        <div class="form">
-            <input type="text" class="form__input form-control" required autocomplete="off" placeholder=" ">
-            <label for="email" class="form__label">Модель</label>
-        </div>
-        <div class="form">
-            <input type="text" class="form__input form-control" required autocomplete="off" placeholder=" ">
-            <label for="email" class="form__label">Ціна товару(шт)</label>
-        </div>
-    </div>
-    <label for="new_good_img"><i class="bi bi-file-earmark-plus d-flex justify-content-center add mb-3"></i></label>
-    <input type="file" id="new_good_img" name="avatar" required accept="image/png, image/jpeg" style="display:none">
-    <div class="modal-footer">
-        <div class="number-input">
-            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="bi bi-dash"></i></button>
-            <input class="quantity" min="1" max="999" name="quantity" value="1" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
-            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="bi bi-plus"></i>
-            </button>
-        </div>
-        <button type="button" class="btn btn-success">Додати до складу</button>
-    </div>
-</div>
+</form>

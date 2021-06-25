@@ -1,37 +1,50 @@
-<div class="row modal_input add_glasses">
+<div class="row  add_glasses">
     <div class="col ">
         <div class="form">
-            <input type="text" class="form__input form-control" required autocomplete="off" placeholder=" ">
-            <label for="email" class="form__label">Код товару</label>
+            <input type="text" id="idNewGlass" name="idNewGlass" class="form__input form-control" required autocomplete="off" placeholder=" ">
+            <label for="idNewGlass" class="form__label">Код товару</label>
         </div>
-        <div class="form">а
-            <input type="text" class="form__input form-control" required autocomplete="off" placeholder=" ">
+        <div class="form">
+            <input type="text" id="typeGlass" name="typeGlass" class="form__input form-control" required autocomplete="off" placeholder=" ">
+            <label for="typeGlass" class="form__label">Тип Скла</label>
         </div>
-        <label for="email" class="form__label">Тип Скла</label>
     </div>
     <div class="col">
         <div class="form">
-            <input type="text" class="form__input form-control" required autocomplete="off" placeholder=" ">
-            <label for="email" class="form__label">Марка телефона</label>
+            <input type="text" id="brandPhoneGlass" name="brandPhoneGlass" class="form__input form-control" required autocomplete="off" placeholder=" ">
+            <label for="brandPhoneGlass" class="form__label">Марка телефона</label>
         </div>
         <div class="form">
-            <input type="text" class="form__input form-control" required autocomplete="off" placeholder=" ">
-            <label for="email" class="form__label px-3">Модель</label>
+            <input type="text" id="modelPhoneGlass" name="modelPhoneGlass" class="form__input form-control" required autocomplete="off" placeholder=" ">
+            <label for="modelPhoneGlass" class="form__label px-3">Модель</label>
         </div>
     </div>
-    <div class="form">
-        <input type="text" class="form__input form-control" required autocomplete="off" placeholder=" ">
-        <label for="email" class="form__label px-3">Ціна товару(шт)</label>
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="form ">
+                <input type="text" id="firstPriceGlass" name="firstPriceGlass" class="form__input form-control " required autocomplete="off" placeholder=" " style="width:104%">
+                <label for="firstPriceGlass" class="form__label ">Ціна товару(шт)</label>
+            </div>
+        </div>
+        <div class="drag-and-drop-add-charge col d-flex">
+            <div class="drag-and-drop-content py-3" tabindex="0">
+                <label for="new_case_img"><i class="bi bi-file-earmark-plus d-flex justify-content-center  "></i></label>
+                <input type="file" id="new_charge_img" name="new_charge_img" required accept="image/png, image/jpeg" style="display:none">
+            </div>
+        </div>
     </div>
-    <label for="new_good_img"><i class="bi bi-file-earmark-plus d-flex justify-content-center add mb-3"></i></label>
-    <input type="file" id="new_good_img" name="avatar" required accept="image/png, image/jpeg" style="display:none">
+    <div class="row drag-and-drop-img-charge">
+        <div class="drag-and-drop-img">
+            <img src="assets/img/test-case.jpeg" alt="">
+        </div>
+    </div>
     <div class="modal-footer">
         <div class="number-input">
-            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="bi bi-dash"></i></button>
+            <button  type="reset" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="bi bi-dash"></i></button>
             <input class="quantity" min="1" max="999" name="quantity" value="1" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
-            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="bi bi-plus"></i>
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" type="text"><i class="bi bi-plus"></i>
             </button>
         </div>
-        <button type="button" class="btn btn-success">Додати до складу</button>
+        <button type="submit" class="btn btn-success">Додати до складу</button>
     </div>
 </div>

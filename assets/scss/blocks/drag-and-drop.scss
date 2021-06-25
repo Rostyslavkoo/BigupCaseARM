@@ -1,0 +1,100 @@
+.drag-and-drop-add-case {
+    .drag-and-drop-content {
+        max-width: 35rem;
+        margin: auto;
+    }
+
+    .drag-and-drop-img {
+        margin: 1rem auto;
+
+        img {
+            max-width: 5rem;
+        }
+    }
+}
+
+.drag-and-drop-add-charge {
+    .drag-and-drop-content {
+        width: 18rem;
+        margin: auto;
+        margin-left: 1rem;
+        display: flex;
+
+    }
+
+}
+
+.drag-and-drop-img-charge {
+    .drag-and-drop-img {
+        margin: 1rem auto;
+
+        img {
+            max-width: 5rem;
+        }
+    }
+}
+
+.drag-and-drop-content {
+    border: 5px dotted $gray-300;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+
+    i {
+        color: $gray-300;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: 0.2s ease-out;
+
+    }
+
+    &__active {
+        border: 5px dotted $gray-900;
+        transition: 0.4s ease-out;
+        background-color: $gray-100;
+
+        i {
+            color: $gray-900;
+            transition: 0.4s ease-out;
+        }
+    }
+
+    &:hover {
+        border: 5px dotted $gray-900;
+        transition: 0.4s ease-out;
+        background-color: $gray-100;
+
+        i {
+            color: $gray-900;
+            transition: 0.4s ease-out;
+        }
+    }
+
+    &:focus {
+        border: 5px dotted $gray-900;
+        transition: 0.4s ease-out;
+        background-color: $gray-100;
+        outline: none;
+
+        i {
+            color: $gray-900;
+            transition: 0.4s ease-out;
+        }
+    }
+
+}
+
+.drag-and-drop-img {
+    display: flex;
+    justify-content: center;
+
+    img {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        box-shadow: 1px 1px 0.5rem rgba($gray-500, 0.5)
+    }
+}

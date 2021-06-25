@@ -8,30 +8,32 @@
             </div>
             <div class="modal-body">
                 <!-- add-new-goods-btn -->
-                <div class="row modal_input justify-content-between align-items-center">
-                    <div class="col col-lg-3 ">
-                        <div class="form">
-                            <input type="text" class="form__input form-control" required autocomplete="off" placeholder=" ">
-                            <label for="email" class="form__label">Код товару</label>
+                <form action="">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col col-lg-3 ">
+                            <div class="form">
+                                <input type="text" id="idAvaibleGood" name="idAvaibleGood" class="form__input form-control" required autocomplete="off" placeholder=" ">
+                                <label for="idAvaibleGood" class="form__label">Код товару</label>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3">
+                            <button type="button" onclick="show_cases()" class="btn btn-indigo-600 " id="btnNew" data-bs-toggle="modal" data-bs-target="#modal_add_new" data-bs-dismiss="modal">
+                                <i class="bi bi-list"> </i> Новий </button>
                         </div>
                     </div>
-                    <div class="col col-lg-3">
-                        <button type="button" onclick="show_cases()" class="btn btn-indigo-600 " id="btnNew" data-bs-toggle="modal" data-bs-target="#modal_add_new" data-bs-dismiss="modal">
-                            <i class="bi bi-list"> </i> Новий </button>
-                    </div>
-                </div>
-                @@include('_modal-add-avaible-goods-content.html')
+                    @@include('_modal-add-avaible-goods-content.html')
             </div>
             <div class="modal-footer ">
                 <div class="number-input">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="bi bi-dash"></i></button>
+                    <button type="reset"onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="bi bi-dash"></i></button>
                     <input class="quantity" min="1" max="999" name="quantity" value="1" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="bi bi-plus"></i>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" type="text"><i class="bi bi-plus"></i>
                     </button>
                 </div>
-                <button type="button" class="btn btn-success">Додати до складу</button>
+                <button type="submit" class="btn btn-success">Додати до складу</button>
             </div>
+            </form>
         </div>
-    </div>test
+    </div>
 </div>
 @@include('_modal-add-new-goods.html')

@@ -5,7 +5,9 @@ let btnCase = document.querySelector('#btnAddCase')
 let btnCharge = document.querySelector('#btnAddCharge')
 let btnGlass = document.querySelector('#btnAddGlass')
 let addGoodsModal = document.querySelector('#addGoodsModal')
-
+let idNewCase = document.querySelector('#idNewCase')
+let idNewCharge = document.querySelector('#idNewCharge')
+let idNewGlass = document.querySelector('#idNewGlass')
 
 function show_cases() {
     addCharge.style.display = 'none';
@@ -14,7 +16,7 @@ function show_cases() {
     btnCase.classList.add("_active-btn");
     btnGlass.classList.remove("_active-btn");
     btnCharge.classList.remove("_active-btn");
-
+      setTimeout(function(){ document.querySelector('#idNewCase').focus(); }, 1000);
 
 }
 
@@ -25,7 +27,7 @@ function show_charge() {
     btnCharge.classList.add("_active-btn");
     btnCase.classList.remove("_active-btn");
     btnGlass.classList.remove("_active-btn");
-
+    idNewCharge.focus();
 
 
 }
@@ -37,7 +39,7 @@ function show_glasse() {
     btnGlass.classList.add("_active-btn");
     btnCase.classList.remove("_active-btn");
     btnCharge.classList.remove("_active-btn");
-
+    idNewGlass.focus()
 
 
 }
