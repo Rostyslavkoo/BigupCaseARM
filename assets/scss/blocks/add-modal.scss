@@ -1,32 +1,32 @@
 .c-modal-content.modal-content {
-  box-shadow   : 0 0 5px $gray-500;
-  border       : none!important;
-  border-radius: 2.5rem;
-  padding      : 2rem;
+    box-shadow: 0 0 5px $gray-500;
+    border: none !important;
+    border-radius: 2.5rem;
+    padding: 2rem;
 }
 
 .c-modal-content.modal-header {
-  border: none;
+    border: none;
 }
 
 .add-new-goods-btn i {
-  @include breakpoint($c-first_breakpoint) {
-    display: none;
-  }
+    @include breakpoint($c-first_breakpoint) {
+        display: none;
+    }
 }
 
 .add-new-goods-btn .back i {
-  @include breakpoint($c-first_breakpoint) {
-    display: block!important;
-  }
+    @include breakpoint($c-first_breakpoint) {
+        display: block !important;
+    }
 }
 
 .modal-img-table {
-  z-index: 1000;
+    z-index: 1000;
 }
 
 .add_cases,
 .add_charges,
 .add_glasses {
-  margin: 3rem 0;
+    margin: 3rem 0;
 }

@@ -3,8 +3,9 @@
 @import "_mixins";
 
 body {
-  font-family: $system_fonts;
+    font-family: $system_fonts;
 }
+
 // all block
 @import "blocks/pages";
 @import "blocks/search-input";
