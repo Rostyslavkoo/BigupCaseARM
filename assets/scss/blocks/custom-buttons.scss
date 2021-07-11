@@ -119,3 +119,21 @@
     box-shadow: 0 0 0.2rem rgba($success, 0.5);
     border: none;
 }
+
+.print-ico {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media print {
+    .print-ico {
+        display: none;
+    }
+}
+
+@include breakpoint($c-third_breakpoint) {
+    .report-btn {
+        padding: 4px 10px;
+        font-size: 8px;
+    }
+}

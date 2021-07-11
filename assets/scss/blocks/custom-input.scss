@@ -182,7 +182,7 @@ input[type="datetime-local"] {
     background-color: #E8ECF5;
     border-radius: 0.25rem;
     border: none;
-    padding: 0.5rem 1rem 0.5rem;
+    padding: 1rem 1rem 0.5rem;
     height: 2.8rem;
 }
 
@@ -216,17 +216,6 @@ input[type="datetime-local"] {
     background-color: $blue-200;
     color: white;
 }
-
-input[type="datetime-local"]:in-range::-webkit-datetime-edit-year-field,
-input[type="datetime-local"]:in-range::-webkit-datetime-edit-month-field,
-input[type="datetime-local"]:in-range::-webkit-datetime-edit-day-field,
-input[type="datetime-local"]:in-range::-webkit-datetime-edit-hour-field,
-input[type="datetime-local"]:in-range::-webkit-datetime-edit-minute-field,
-input[type="datetime-local"]:in-range::-webkit-datetime-edit-text {
-    color: transparent;
-}
-
-
 
 
 

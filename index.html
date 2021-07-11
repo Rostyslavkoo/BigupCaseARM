@@ -9,23 +9,26 @@
 </head>
 
 <body>
-    <div class="container-fluid d-flex align-items-center justify-content-center" style="height:100vh">
-        <div class="row  align-items-center justify-content-center w-25">
-            <div class="col col-lg-10 ">
-                <div class="login-input ">
-                    <div class="form p-0 m-0">
-                        <input id="AccesCod" type="password" class="form__input form-control" required autocomplete="off" placeholder=" " autofocus>
-                        <label for="AccesCod" class="form__label ">Код доступу</label>
+    <form action="main-add-good.html" method="GET" name="login-form">
+        <div class="container-fluid d-flex align-items-center justify-content-center" style="height:100vh">
+            <div class="row  align-items-center justify-content-center w-25">
+                <div class="col col-lg-10 ">
+                    <div class="login-input ">
+                        <div class="form p-0 m-0">
+                            <input id="AccesCod" type="password" class="form__input form-control " required autocomplete="off" placeholder=" " autofocus>
+                            <label for="AccesCod" class="form__label ">Код доступу</label>
+                        </div>
                     </div>
                 </div>
+                <div class="col col-lg-2 p-1"> <button class="btn btn-secondary p-2 mb-1" type="submit" onclick="WrongPass()">Вхід</button>
+                </div>
+                <div class="row m-0 ">
+                    <a href="" id="wrong-pass-text">Неправильний пароль</a>
+                </div>
             </div>
-            <div class="col col-lg-2 p-1"> <a href="main-add-good.html"> <button class="btn btn-purple p-2 mb-1 ">Вхід</button></a>
-            </div>
-            <div class="row m-0 ">
-                <a href="" class="wront-pass">Неправильний парольm</a>
-            </div>
-        </div>
+    </form>
     </div>
+    <script src="assets/js/main.min.js" charset="utf-8"></script>
 </body>
 
 </html>

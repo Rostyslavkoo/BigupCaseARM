@@ -79,3 +79,105 @@ p {
         display: block;
     }
 }
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #ddd !important;
+}
+
+@media print {
+    .col-lg-11 {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+@include breakpoint($c-first_breakpoint) {
+
+    .table td,
+    .table th,
+    .table tr {
+        font-size: 13px;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+
+    .b-img-table i {
+        font-size: 1rem;
+    }
+}
+
+@include breakpoint($c-second_breakpoint) {
+
+    .table td,
+    .table th,
+    .table tr {
+        font-size: 10px;
+
+    }
+
+    .container,
+    .container-sm {
+        max-width: 600px !important;
+    }
+
+    .b-img-table i {
+        font-size: 1rem;
+    }
+       header {
+
+        h1,
+        .add
+            {
+            font-size: 1.4rem;
+        }
+        .menu i{
+            font-size: 1.4rem;
+        }
+    }
+    .mt-5{
+      margin-top: 3rem!important;
+    }
+}
+
+@include breakpoint($c-third_breakpoint) {
+
+    .table td,
+    .table th,
+    .table tr {
+        font-size: 8px;
+        margin: 0;
+    }
+
+    .b-img-table i {
+        font-size: 0.5rem;
+    }
+
+    .search input {
+        font-size: 8px;
+
+    }
+
+    header {
+
+        h1,
+        .add
+            {
+            font-size: 1rem;
+        }
+        .menu i{
+            font-size: 1rem;
+        }
+    }
+    .mt-5{
+      margin-top: 2rem!important;
+    }
+    .main-cell{
+        min-width: 10rem;
+    }
+
+}

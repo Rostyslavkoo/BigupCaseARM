@@ -1,26 +1,32 @@
-.wront-pass{
-	color: $red-400;
-	margin: 0;
-	padding:0;
-	text-decoration: none;
-	outline: none;
-	&:hover{
-			color: $red-400;
-
-	}
+a{
+	display: none;
 }
-.login-input{
- .form__input{
- 	background-color: #fff;
- 	 box-shadow: 0 0 0.2rem rgba(red, 1);
- 	 &:focus{
- 	 	 box-shadow: 0 0 0.2rem rgba(red, 1);
- 	 }
- }
+.wrong-pass {
+    a {
+        color: $red-400;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        outline: none;
+        display: block;
 
-    .form__input:not(:placeholder-shown) {
-    background-color: white;
-    box-shadow: 0 0 0.2rem rgba(red, 1);
-}
-}
+        &:hover {
+            color: $red-400;
 
+        }
+    }
+
+    input {
+        background-color: #fff;
+        box-shadow: 0 0 0.2rem rgba(red, 1);
+
+        &:focus {
+            box-shadow: 0 0 0.2rem rgba(red, 1);
+        }
+    }
+
+    input:not(:placeholder-shown) {
+        background-color: white;
+        box-shadow: 0 0 0.2rem rgba(red, 1);
+    }
+}
