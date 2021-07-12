@@ -61,23 +61,50 @@ p {
     tr {
         height: 5rem;
         padding: 0 1rem;
+
+        @include breakpoint($c-first_breakpoint) {
+            height: auto;
+        }
     }
 
     .c-img-table {
         min-width: 3rem;
-        min-height: 2rem;
-        max-height: 2rem;
+        min-height: 3rem;
+        max-height: 3rem;
         max-width: 3rem;
         padding: 0;
-        border-left: 1px solid rgba(gray, 0.1);
-        display: flex;
+        display: block;
         align-items: center;
+        color: red;
+        margin: auto;
+
     }
 
     img {
         width: 100%;
         display: block;
     }
+
+}
+
+@include breakpoint($c-first_breakpoint) {
+    .c-table-add-avaible {
+
+        .table td,
+        .table th,
+        .table tr {
+            display: block !important;
+            text-align: center;
+            width: auto;
+            font-size: 1rem;
+        }
+
+        .table {
+            width: auto;
+            margin: auto;
+        }
+    }
+
 }
 
 .table-bordered th,
@@ -128,19 +155,21 @@ p {
     .b-img-table i {
         font-size: 1rem;
     }
-       header {
+
+    header {
 
         h1,
-        .add
-            {
+        .add {
             font-size: 1.4rem;
         }
-        .menu i{
+
+        .menu i {
             font-size: 1.4rem;
         }
     }
-    .mt-5{
-      margin-top: 3rem!important;
+
+    .mt-5 {
+        margin-top: 3rem !important;
     }
 }
 
@@ -154,7 +183,7 @@ p {
     }
 
     .b-img-table i {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .search input {
@@ -164,19 +193,20 @@ p {
 
     header {
 
-        h1,
-        .add
-            {
-            font-size: 1rem;
+        h1 {
+            font-size: 0.8rem;
         }
-        .menu i{
-            font-size: 1rem;
+
+        .menu i {
+            font-size: 1.2rem;
         }
     }
-    .mt-5{
-      margin-top: 2rem!important;
+
+    .mt-5 {
+        margin-top: 2rem !important;
     }
-    .main-cell{
+
+    .main-cell {
         min-width: 10rem;
     }
 

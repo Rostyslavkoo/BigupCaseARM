@@ -3,6 +3,11 @@
     border: none !important;
     border-radius: 2.5rem;
     padding: 2rem;
+
+    @include breakpoint($c-first_breakpoint) {
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
 }
 
 .c-modal-content.modal-header {
@@ -21,6 +26,27 @@
     }
 }
 
+@include breakpoint($c-forth_breakpoint) {
+    .back {
+
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto;
+    }
+
+    .add-new-goods-btn {
+      
+
+        .col {
+            margin: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+}
+
 .modal-img-table {
     z-index: 1000;
 }
@@ -29,4 +55,17 @@
 .add_charges,
 .add_glasses {
     margin: 1rem 0;
+
+}
+
+@include breakpoint($c-forth_breakpoint) {
+
+    .modal-title {
+        font-size: 0.8rem;
+    }
+    .c-drag-and-drop-sm{
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
 }

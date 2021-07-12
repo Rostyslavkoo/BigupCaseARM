@@ -1,9 +1,10 @@
 @import "_vars";
-@import "vendor/bootstrap";
 @import "_mixins";
+@import "vendor/bootstrap";
 
 body {
     font-family: $system_fonts;
+
 }
 
 // all block

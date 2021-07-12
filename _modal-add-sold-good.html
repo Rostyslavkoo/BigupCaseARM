@@ -20,27 +20,28 @@
                     </div>
                 </div>
                 @@include('_modal-add-avaible-goods-content.html')
-                <div class="row modal_input ">
-                    <div class="col form">
+                <div class="row modal_input justify-content-around ">
+                    <div class="col  col-lg-4 form ">
                         <input type="datetime-local" class="form__input form-control" required autocomplete="off" placeholder=" ">
                         <label for="email" class="form__label">Дата продажу</label>
                     </div>
-                    <div class="col modal-input-block c-number mt-4">
-                        <div class="number-input d-flex justify-content-center ">
-                            <button type="reset"onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="bi bi-dash"></i></button>
-                            <input class="quantity" min="1" max="999" name="quantity" value="1" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
-                            <button type="text"onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="bi bi-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col modal-input-block">
+                
+                    <div class="col col-lg-4 modal-input-block">
                         <div class="form">
                             <input type="text" id="lastPriceGood" name="lastPriceGood"class="form__input form-control" required autocomplete="off" placeholder=" ">
                             <label for="lastPriceGood" class="form__label px-3">Ціна товару(шт)</label>
                         </div>
                     </div>
                 </div>
+               
+            
                 <div class="modal-footer ">
+                        <div class="number-input">
+                    <button type="reset"onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="bi bi-dash"></i></button>
+                    <input class="quantity" min="1" max="999" name="quantity" value="1" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" type="text"><i class="bi bi-plus"></i>
+                    </button>
+                </div>
                     <button type="submit" class="btn btn-success">Додати до складу</button>
                 </div>
                       </form>
